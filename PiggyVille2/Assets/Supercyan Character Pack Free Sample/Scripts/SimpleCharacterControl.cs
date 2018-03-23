@@ -113,6 +113,9 @@ public class SimpleCharacterControl : MonoBehaviour {
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
 
+		float animSpeed = Mathf.Abs (v);
+		GetComponent<Animator> ().SetFloat ("Speed", animSpeed);
+
         bool walk = Input.GetKey(KeyCode.LeftShift);
 
         if (v < 0) {

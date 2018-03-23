@@ -231,7 +231,8 @@ Prefab:
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: m_GamePlayerPrefab
       value: 
-      objectReference: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
+      objectReference: {fileID: 1824340380413090, guid: 0e74cf81e6fd82546b4797f71ceffb81,
+        type: 2}
     - target: {fileID: 11402578, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: m_Text
       value: Netzwerk Lobby

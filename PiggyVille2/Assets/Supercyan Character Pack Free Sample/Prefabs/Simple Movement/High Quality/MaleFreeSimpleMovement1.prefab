@@ -491,6 +491,7 @@ GameObject:
   - component: {fileID: 114186096980249352}
   - component: {fileID: 114553036340651082}
   - component: {fileID: 114724323486128038}
+  - component: {fileID: 114855130941594164}
   m_Layer: 0
   m_Name: MaleFreeSimpleMovement1
   m_TagString: Untagged
@@ -1225,9 +1226,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ca30c36b506c64aafa127f12f968fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_moveSpeed: 2
+  m_moveSpeed: 12
   m_turnSpeed: 200
-  m_jumpForce: 4
+  m_jumpForce: 6
   m_animator: {fileID: 95665039525092722}
   m_rigidBody: {fileID: 54084939265967506}
   m_controlMode: 0
@@ -1275,7 +1276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 3
-  m_SendInterval: 0.1
+  m_SendInterval: 0.033333335
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0
   m_SyncSpin: 0
@@ -1295,6 +1296,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4360e38891150c54dae297649b8d4de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114855130941594164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1824340380413090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 95665039525092722}
+  m_ParameterSendBits: 63
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
 --- !u!136 &136606663363984694
 CapsuleCollider:
   m_ObjectHideFlags: 1

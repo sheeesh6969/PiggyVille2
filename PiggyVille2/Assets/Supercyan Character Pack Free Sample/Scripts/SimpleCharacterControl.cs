@@ -115,7 +115,7 @@ public class SimpleCharacterControl : MonoBehaviour {
 
 		//Acp---
 		float animSpeed = Mathf.Abs (v);
-		GetComponent<Animator> ().SetFloat ("Speed", animSpeed);
+		GetComponent<Animator> ().SetFloat ("MoveSpeed", animSpeed);
 		//Acp---
 
         bool walk = Input.GetKey(KeyCode.LeftShift);
@@ -146,7 +146,7 @@ public class SimpleCharacterControl : MonoBehaviour {
 
 		//Acp---
 		float animSpeed = Mathf.Abs (v);
-		GetComponent<Animator> ().SetFloat ("Speed", animSpeed);
+		GetComponent<Animator> ().SetFloat ("MoveSpeed", animSpeed);
 		//Acp---
 
         Transform camera = Camera.main.transform;

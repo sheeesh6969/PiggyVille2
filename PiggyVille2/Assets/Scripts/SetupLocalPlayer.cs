@@ -22,11 +22,11 @@ public class SetupLocalPlayer : NetworkBehaviour
 	//acp
 	public override void OnStartLocalPlayer()
 	{
-		Renderer[] rens = GetComponentsInChildren<Renderer> ();
-		foreach (Renderer ren in rens) {
-			ren.enabled = false;
-		}
-
+//		Renderer[] rens = GetComponentsInChildren<Renderer> ();
+//		foreach (Renderer ren in rens) {
+//			ren.enabled = false;
+//		}
+//
 		GetComponent<NetworkAnimator> ().SetParameterAutoSend (0, true);
 	}
 

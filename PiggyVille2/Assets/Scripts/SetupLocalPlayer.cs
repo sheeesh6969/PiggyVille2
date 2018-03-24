@@ -17,15 +17,16 @@ public class SetupLocalPlayer : NetworkBehaviour
             Camera.main.transform.LookAt(this.transform.position);
             Camera.main.transform.parent = this.transform;
         }
+	}
 
-
-		//acp
+	//acp
+	public override void OnStartLocalPlayer()
+	{
 		Renderer[] rens = GetComponentsInChildren<Renderer> ();
 		foreach (Renderer ren in rens) {
 			ren.enabled = false;
 		}
 
-		//acp
 		GetComponent<NetworkAnimator> ().SetParameterAutoSend (0, true);
 	}
 
